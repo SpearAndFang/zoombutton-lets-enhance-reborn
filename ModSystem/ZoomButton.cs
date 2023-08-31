@@ -27,7 +27,7 @@ namespace ZoomButton
         {
             this.capi = api;
 
-            this.capi.Logger.Event("Hello from ZoomButton!");
+            this.capi.Logger.Event("started 'ZoomButton' mod");
 
             // load config file or write it with defaults
             this.config = api.LoadModConfig<ModConfig>("zoombutton.json");
@@ -80,7 +80,10 @@ namespace ZoomButton
                 }
                 this.UpdateSettings();
             }
-            this.renderer.PercentZoomed = this.zoomState;
+            if (this.config.vignetteShaderEnabled)
+            {
+                this.renderer.PercentZoomed = this.zoomState;
+            }
             // otherwise we are already zoomed all the way in or out: nothing to do
         }
 

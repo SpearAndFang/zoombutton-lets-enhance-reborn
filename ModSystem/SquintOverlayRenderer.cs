@@ -1,9 +1,6 @@
-using System;
-using Vintagestory.API.Client;
-using Vintagestory.API.Common;
-
 namespace ZoomButton
 {
+    using Vintagestory.API.Client;
 
     /*
     REFERENCE:
@@ -40,13 +37,14 @@ namespace ZoomButton
         public void Dispose()
         {
             this.capi.Render.DeleteMesh(this.quadRef);
-            this.overlayShaderProg.Dispose();
+            //1.18 why this crash
+            //this.overlayShaderProg.Dispose();
         }
 
         public void OnRenderFrame(float deltaTime, EnumRenderStage stage)
         {
             if (this.PercentZoomed == 0)
-                return;
+            { return; }
 
             var curShader = this.capi.Render.CurrentActiveShader;
             curShader.Stop();
