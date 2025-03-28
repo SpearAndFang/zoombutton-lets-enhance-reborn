@@ -2,6 +2,7 @@ namespace ZoomButton
 {
     public class ModConfig
     {
+        public static ModConfig Loaded { get; set; } = new ModConfig();
         public float zoomInTimeSec = 0.5F;
         public float zoomOutTimeSec = 0.1F;
         public int fieldOfView = 20;

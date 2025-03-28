@@ -2,14 +2,6 @@ namespace ZoomButton
 {
     using Vintagestory.API.Client;
 
-    /*
-    REFERENCE:
-    https://github.com/anegostudios/vsmodexamples/blob/master/Mods/ScreenOverlaySquintShader/src/ScreenOverlaySquintShader.cs
-    https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83
-    http://glslsandbox.com/e#71442.0
-    https://www.geeks3d.com/20091020/shader-library-lens-circle-post-processing-effect-glsl/
-    */
-
     public class SquintOverlayRenderer : IRenderer
     {
         readonly MeshRef quadRef;

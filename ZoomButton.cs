@@ -22,13 +22,14 @@ namespace ZoomButton
         private float zoomState = 0;
         private ModConfig config;
         private SquintOverlayRenderer renderer;
+        private readonly string cfgFileName = "zoombutton119.json";
 
         public override void StartClientSide(ICoreClientAPI api)
         {
             this.capi = api;
-
+            /*
+            // client side only mod so this wont pop but hey
             this.capi.Logger.Event("started 'ZoomButton' mod");
-
             // load config file or write it with defaults
             this.config = api.LoadModConfig<ModConfig>("zoombutton.json");
             if (this.config == null)
@@ -36,15 +37,40 @@ namespace ZoomButton
                 this.config = new ModConfig();
                 api.StoreModConfig(this.config, "zoombutton.json");
             }
-
+            */
             api.Input.RegisterHotKey(HOTKEY_CODE, "Zoom in", GlKeys.Z, HotkeyType.CharacterControls);
             api.Event.RegisterGameTickListener(this.OnGameTick, MAX_FRAMERATE_MS);
 
             this.renderer = new SquintOverlayRenderer(api);
         }
 
+
+        public override void StartPre(ICoreAPI api)
+        {
+            try
+            {
+                if ((config = api.LoadModConfig<ModConfig>(cfgFileName)) == null)
+                { api.StoreModConfig(ModConfig.Loaded, cfgFileName); }
+                else
+                { ModConfig.Loaded = config; }
+            }
+            catch
+            {
+                api.StoreModConfig(ModConfig.Loaded, cfgFileName);
+            }
+            base.StartPre(api);
+        }
+
+
+
         private void OnGameTick(float dt)
         {
+            if (this.config == null)
+            {
+                this.config = new ModConfig();
+                capi.StoreModConfig(this.config, cfgFileName);
+            }
+
             var isHotKeyPressed = this.capi.Input.KeyboardKeyState[this.capi.Input.GetHotKeyByCode(HOTKEY_CODE).CurrentMapping.KeyCode];
 
             // is the player currently zooming in?

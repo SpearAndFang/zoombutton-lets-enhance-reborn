@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "file": "zoombutton119.json",
+  "settings": {
+    "float": {
+      "ZOOMINTIMESEC": {
+        "name": "zoomInTimeSec",
+        "ingui": "zoombuttonreborn:zoomInTimeSec",
+        "weight": 1,
+        "comment": "zoombuttonreborn:zoomInTimeSec-Comment",
+
+        "default": 0.5,
+        "range": {
+          "min": 0.0,
+          "max": 4.0
+        }
+      },
+      "ZOOMOUTTIMESEC": {
+        "name": "zoomOutTimeSec",
+        "ingui": "zoombuttonreborn:zoomOutTimeSec",
+        "weight": 2,
+        "comment": "zoombuttonreborn:zoomOutTimeSec-Comment",
+
+        "default": 0.1,
+        "range": {
+          "min": 0.0,
+          "max": 4.0
+        }
+      },
+      "MOUSESENSITIVITYFACTOR": {
+        "name": "mouseSensitivityFactor",
+        "ingui": "zoombuttonreborn:mouseSensitivityFactor",
+        "weight": 4,
+        "comment": "zoombuttonreborn:mouseSensitivityFactor-Comment",
+
+        "default": 0.5,
+        "range": {
+          "min": 0.0,
+          "max": 4.0
+        }
+      },
+      "MOUSESMOOTHING": {
+        "name": "mouseSmoothing",
+        "ingui": "zoombuttonreborn:mouseSmoothing",
+        "weight": 6,
+        "comment": "zoombuttonreborn:mouseSmoothing-Comment",
+
+        "default": 0.0,
+        "range": {
+          "min": 0.0,
+          "max": 4.0
+        }
+      }
+    },
+	  "integer": {
+      "FIELDOFVIEW": {
+        "name": "fieldOfView",
+        "ingui": "zoombuttonreborn:fieldOfView",
+        "weight": 3,
+        "comment": "zoombuttonreborn:fieldOfView-Comment",
+
+        "default": 20,
+        "range": {
+          "min": 20,
+          "max": 70
+        }
+      }
+    },
+    "boolean": {
+      "CHANGEMOUSESMOOTHING": {
+        "name": "changeMouseSmoothing",
+        "ingui": "zoombuttonreborn:changeMouseSmoothing",
+        "weight": 5,
+        "comment": "zoombuttonreborn:changeMouseSmoothing-Comment",
+        "default": false
+      },
+      "VIGNETTESHADERENABLED": {
+        "name": "vignetteShaderEnabled",
+        "ingui": "zoombuttonreborn:vignetteShaderEnabled",
+        "weight": 7,
+        "comment": "zoombuttonreborn:vignetteShaderEnabled-Comment",
+        "default": true
+      }
+    }
+  }
+}

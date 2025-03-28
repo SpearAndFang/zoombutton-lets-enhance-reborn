@@ -1,0 +1,16 @@
+{
+	"zoomInTimeSec":"Zoom In Time",
+	"zoomInTimeSec-Comment":"Default: 0.500 (Seconds)",
+	"zoomOutTimeSec":"Zoom Out Time",
+	"zoomOutTimeSec-Comment":"Default: 0.100 (Seconds)",
+	"mouseSensitivityFactor":"Mouse Sensitivity",
+	"mouseSensitivityFactor-Comment":"Default: 0.500 (Seconds)",
+	"mouseSmoothing":"Mouse Smoothing",
+	"mouseSmoothing-Comment":"Default: 0.000",
+	"fieldOfView":"Field Of View",
+	"fieldOfView-Comment":"Default: 20 (Degrees)",
+	"changeMouseSmoothing":"Change Mouse Smoothing",
+	"changeMouseSmoothing-Comment":"Default: Disabled",
+	"vignetteShaderEnabled":"Vignette Shader Enabled",
+	"vignetteShaderEnabled-Comment":"Default: Enabled"
+}
