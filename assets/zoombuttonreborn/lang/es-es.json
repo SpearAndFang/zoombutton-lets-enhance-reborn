@@ -1,0 +1,19 @@
+{
+    "_comentarios-1": "Zoom Button - Reborn v2.0.0 || Enlace de VS ModDB: https://mods.vintagestory.at/zoombutton ",
+    "_comentarios-2": "Traducido por C4BR3R4 || Última Modificación: 30/05/2025 || Registro de Cambios: https://c4br3r4.es/index.php?topic=1336.0 ",
+
+    "zoomInTimeSec":"Tiempo de Acercamiento",
+    "zoomInTimeSec-Comment":"Predeterminado: 0.500 (segundos)",
+    "zoomOutTimeSec":"Tiempo de Alejamiento",
+    "zoomOutTimeSec-Comment":"Predeterminado: 0.100 (segundos)",
+    "mouseSensitivityFactor":"Sensibilidad del Ratón",
+    "mouseSensitivityFactor-Comment":"Predeterminado: 0.500 (segundos)",
+    "mouseSmoothing":"Suavizado del Ratón",
+    "mouseSmoothing-Comment":"Predeterminado: 0.000",
+    "fieldOfView":"Campo de Visión",
+    "fieldOfView-Comment":"Predeterminado: 20 (grados)",
+    "changeMouseSmoothing":"Cambiar Suavizado del Ratón",
+    "changeMouseSmoothing-Comment":"Predeterminado: Disabled",
+    "vignetteShaderEnabled":"Activar Sombreado de Viñeta",
+    "vignetteShaderEnabled-Comment":"Predeterminado: Enabled"
+}
